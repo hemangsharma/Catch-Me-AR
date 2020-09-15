@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zRf-lm-AWh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="Catch_Me_AR" customModuleProvider="target" sceneMemberID="viewController">
+                    <arskView key="view" contentMode="scaleToFill" id="EO5-fy-WZq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </arskView>
+                    <connections>
+                        <outlet property="sceneView" destination="EO5-fy-WZq" id="yuu-Sz-cD5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="106"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jXo-CN-dwm">
+            <objects>
+                <viewController id="zRf-lm-AWh" customClass="ViewController" customModule="Catch_Me_AR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YAb-tQ-Nsz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arskView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9i-ef-G8o">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="846"/>
+                            </arskView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HwY-qT-qcY" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="846" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="u0h-GT-sYJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HwY-qT-qcY" firstAttribute="top" secondItem="X9i-ef-G8o" secondAttribute="bottom" id="9yq-TJ-Xst"/>
+                            <constraint firstItem="X9i-ef-G8o" firstAttribute="leading" secondItem="gVI-Sc-EXc" secondAttribute="leading" id="L7f-H4-5jQ"/>
+                            <constraint firstItem="X9i-ef-G8o" firstAttribute="top" secondItem="YAb-tQ-Nsz" secondAttribute="top" id="TOX-Zx-aIs"/>
+                            <constraint firstItem="HwY-qT-qcY" firstAttribute="leading" secondItem="gVI-Sc-EXc" secondAttribute="leading" id="Y4K-BG-3XB"/>
+                            <constraint firstItem="X9i-ef-G8o" firstAttribute="trailing" secondItem="gVI-Sc-EXc" secondAttribute="trailing" id="cjh-We-5ul"/>
+                            <constraint firstItem="HwY-qT-qcY" firstAttribute="trailing" secondItem="gVI-Sc-EXc" secondAttribute="trailing" id="h7Z-Xj-t8p"/>
+                            <constraint firstAttribute="bottom" secondItem="HwY-qT-qcY" secondAttribute="bottom" id="qHi-ua-ja6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gVI-Sc-EXc"/>
+                    </view>
+                    <connections>
+                        <outlet property="bannerView" destination="HwY-qT-qcY" id="kvq-Kv-mk2"/>
+                        <outlet property="sceneView" destination="X9i-ef-G8o" id="pKt-CQ-BQl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FWF-ak-ibM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982.60869565217399" y="102.45535714285714"/>
+        </scene>
+    </scenes>
+</document>
